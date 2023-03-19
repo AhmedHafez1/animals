@@ -1,3 +1,4 @@
+import './Animal.css';
 import heart from './svg/heart.svg';
 import bird from './svg/bird.svg';
 import cat from './svg/cat.svg';
@@ -20,9 +21,10 @@ function Animal({ type }) {
   const [clicks, setClicks] = useState(0);
 
   return (
-    <div onClick={() => setClicks(clicks + 1)}>
-      <img alt="animal" src={svgMap[type]}></img>
+    <div className="animal" onClick={() => setClicks(clicks + 1)}>
+      <img className="animal-svg" alt="animal" src={svgMap[type]}></img>
       <img
+        className="heart"
         alt="heart"
         src={heart}
         style={{ width: 10 + 5 * clicks + 'px' }}

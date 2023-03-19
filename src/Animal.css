@@ -1,0 +1,18 @@
+.animal {
+  width: 300px;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px lightgray;
+  position: relative;
+  cursor: pointer;
+}
+
+.animal-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.heart {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+}
